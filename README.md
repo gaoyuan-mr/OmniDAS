@@ -1,30 +1,16 @@
 # OmniDAS
 
-Static website for the OmniDAS benchmark and DAS-NanoNet results.
+OmniDAS is a distributed acoustic sensing benchmark spanning six sensing
+scenarios, with DAS-NanoNet models for classification, localization,
+compression, and denoising.
 
 ## Website
 
 https://gaoyuan-mr.github.io/OmniDAS/
 
-## Publish
+## Data Availability
 
-In this repository's **Settings > Pages**, select **GitHub Actions** as
-the source. The deployment workflow publishes `website/` after each push
-to `main`. It can also be started from the Actions tab.
+The OmniDAS dataset will be publicly released after publication of the
+associated paper.
 
-## Preview
-
-```bash
-python3 -m http.server 8765 --directory website
-```
-
-Open http://localhost:8765/.
-
-## Verify
-
-```bash
-python3 -m unittest discover -s website/tests -q
-```
-
-This repository contains the website and its presentation assets.
-Manuscript source files and raw research datasets are maintained separately.
+Dataset DOI: [10.5281/zenodo.21992120](https://doi.org/10.5281/zenodo.21992120).
