@@ -1,0 +1,90 @@
+{
+  "datasets": {
+    "industrial": {
+      "name": "Industrial", "task": "Classification", "records": 443, "classCount": 2,
+      "dimensions": "300,000 × 1", "duration": "10 s", "sampleRate": "30 kHz",
+      "classes": [{"label": "Normal", "count": 224}, {"label": "Abnormal", "count": 219}],
+      "split": {"train": 0, "validation": 0, "test": 443, "embargo": 0},
+      "feature": {"card": "assets/images/industrial-feature-card.webp", "full": "assets/images/industrial-feature-full.webp"},
+      "audio": [
+        {"label": "Abnormal", "sampleId": "000001", "src": "assets/audio/industrial/fiber_optic_microphone_abnormal_000001.wav"},
+        {"label": "Abnormal", "sampleId": "000113", "src": "assets/audio/industrial/fiber_optic_microphone_abnormal_000113.wav"},
+        {"label": "Normal", "sampleId": "000195", "src": "assets/audio/industrial/fiber_optic_microphone_normal_000195.wav"},
+        {"label": "Normal", "sampleId": "000198", "src": "assets/audio/industrial/fiber_optic_microphone_normal_000198.wav"},
+        {"label": "Abnormal", "sampleId": "000276", "src": "assets/audio/industrial/straight_run_fiber_optic_cable_abnormal_000276.wav"},
+        {"label": "Abnormal", "sampleId": "000301", "src": "assets/audio/industrial/straight_run_fiber_optic_cable_abnormal_000301.wav"},
+        {"label": "Normal", "sampleId": "000404", "src": "assets/audio/industrial/straight_run_fiber_optic_cable_normal_000404.wav"},
+        {"label": "Normal", "sampleId": "000438", "src": "assets/audio/industrial/straight_run_fiber_optic_cable_normal_000438.wav"}
+      ]
+    },
+    "perimeter-security": {
+      "name": "Perimeter Security", "task": "Classification", "records": 1386, "classCount": 8,
+      "dimensions": "9,984 × 7", "duration": "~5 s", "sampleRate": "2 kSa/s",
+      "classes": [
+        {"label": "Background noise", "count": 42}, {"label": "Road roller in motion", "count": 100},
+        {"label": "Road roller in compaction", "count": 300}, {"label": "Excavator in excavation", "count": 332},
+        {"label": "Excavator in motion", "count": 334}, {"label": "Electric drill in operation", "count": 38},
+        {"label": "Fully loaded forklift in motion", "count": 186}, {"label": "Unloaded forklift in motion", "count": 54}
+      ],
+      "split": {"train": 970, "validation": 208, "test": 208, "embargo": 0},
+      "feature": {"card": "assets/images/perimeter-feature-card.webp", "full": "assets/images/perimeter-feature-full.webp"},
+      "audio": [
+        {"label": "Background noise", "sampleId": "-", "src": "assets/audio/perimeter-security/background_noise.wav"},
+        {"label": "Electric drill in operation", "sampleId": "-", "src": "assets/audio/perimeter-security/electric_drill_in_operation.wav"},
+        {"label": "Excavator in excavation", "sampleId": "-", "src": "assets/audio/perimeter-security/excavator_in_excavation.wav"},
+        {"label": "Excavator in motion", "sampleId": "-", "src": "assets/audio/perimeter-security/excavator_in_motion.wav"},
+        {"label": "Fully loaded forklift in motion", "sampleId": "-", "src": "assets/audio/perimeter-security/fully_loaded_forklift_in_motion.wav"},
+        {"label": "Road roller in compaction", "sampleId": "-", "src": "assets/audio/perimeter-security/road_roller_in_compaction.wav"},
+        {"label": "Road roller in motion", "sampleId": "-", "src": "assets/audio/perimeter-security/road_roller_in_motion.wav"},
+        {"label": "Unloaded forklift in motion", "sampleId": "-", "src": "assets/audio/perimeter-security/unloaded_forklift_in_motion.wav"}
+      ]
+    },
+    "campus": {
+      "name": "Campus", "task": "Classification", "records": 10082, "classCount": 6,
+      "dimensions": "30,000 × 101", "duration": "1 s", "sampleRate": "30 kHz",
+      "classes": [
+        {"label": "Ambient noise", "count": 1400}, {"label": "Hammer dragging", "count": 1600},
+        {"label": "Fence shaking", "count": 1200}, {"label": "Jumping", "count": 100},
+        {"label": "Percussive impact", "count": 2182}, {"label": "Walking", "count": 3600}
+      ],
+      "split": {"train": 6049, "validation": 2016, "test": 2017, "embargo": 0},
+      "feature": {"card": "assets/images/campus-feature-card.webp", "full": "assets/images/campus-feature-full.webp"},
+      "audio": [
+        {"label": "Ambient noise", "sampleId": "000132", "src": "assets/audio/campus/ambient_noise_000132.wav"},
+        {"label": "Fence shaking", "sampleId": "000789", "src": "assets/audio/campus/fence_shaking_000789.wav"},
+        {"label": "Percussive impact", "sampleId": "000930", "src": "assets/audio/campus/percussive_impact_000930.wav"}
+      ]
+    },
+    "environmental-sound": {
+      "name": "Environmental Sound", "task": "Classification", "records": 2000, "classCount": 10,
+      "dimensions": "100,000 × 10", "duration": "2 s", "sampleRate": "50 kHz",
+      "classes": [
+        {"label": "Background", "count": 200}, {"label": "Chainsaw", "count": 200},
+        {"label": "Door wood knock", "count": 200}, {"label": "Drilling", "count": 200},
+        {"label": "Glass breaking", "count": 200}, {"label": "Hand saw", "count": 200},
+        {"label": "Jackhammer", "count": 200}, {"label": "Rain", "count": 200},
+        {"label": "Thunderstorm", "count": 200}, {"label": "Train", "count": 200}
+      ],
+      "split": {"train": 1400, "validation": 300, "test": 300, "embargo": 0},
+      "feature": {"card": "assets/images/environmental-feature-card.webp", "full": "assets/images/environmental-feature-full.webp"},
+      "audio": [
+        {"label": "Background", "sampleId": "87 (ch8)", "src": "assets/audio/environmental-sound/00_background_87_ch8.wav"},
+        {"label": "Chainsaw", "sampleId": "65 (ch3)", "src": "assets/audio/environmental-sound/01_chainsaw_65_ch3.wav"},
+        {"label": "Door wood knock", "sampleId": "180 (ch9)", "src": "assets/audio/environmental-sound/02_door_wood_knock_180_ch9.wav"},
+        {"label": "Drilling", "sampleId": "11 (ch9)", "src": "assets/audio/environmental-sound/03_drilling_11_ch9.wav"},
+        {"label": "Glass breaking", "sampleId": "152 (ch10)", "src": "assets/audio/environmental-sound/04_glass_breaking_152_ch10.wav"},
+        {"label": "Hand saw", "sampleId": "175 (ch7)", "src": "assets/audio/environmental-sound/05_hand_saw_175_ch7.wav"},
+        {"label": "Jackhammer", "sampleId": "170 (ch9)", "src": "assets/audio/environmental-sound/06_jackhammer_170_ch9.wav"},
+        {"label": "Rain", "sampleId": "138 (ch5)", "src": "assets/audio/environmental-sound/07_rain_138_ch5.wav"},
+        {"label": "Thunderstorm", "sampleId": "125 (ch10)", "src": "assets/audio/environmental-sound/08_thunderstorm_125_ch10.wav"},
+        {"label": "Train", "sampleId": "151 (ch9)", "src": "assets/audio/environmental-sound/09_train_151_ch9.wav"}
+      ]
+    },
+    "seismic": {
+      "name": "Seismic", "task": "Classification", "records": 16, "classCount": 2,
+      "dimensions": "500 × 6,500", "duration": "5 s", "sampleRate": "100 Hz",
+      "classes": [{"label": "Background", "count": 14}, {"label": "Earthquake", "count": 2}],
+      "split": {"train": 0, "validation": 0, "test": 16, "embargo": 0}
+    }
+  }
+}

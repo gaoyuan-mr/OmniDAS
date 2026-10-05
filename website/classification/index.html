@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore OmniDAS datasets, class distributions, representative signals, and audio samples.">
+  <title>Datasets · OmniDAS Benchmark</title>
+  <link rel="stylesheet" href="../assets/site.css">
+  <script src="../assets/site.js" defer></script>
+</head>
+<body data-root="..">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="wordmark" href="../" aria-label="OmniDAS Benchmark home">OmniDAS</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="../">Overview</a>
+        <a href="./" aria-current="page">Datasets</a>
+        <a href="../methods/">Results &amp; Method</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" data-classification>
+    <div class="editorial-hero">
+      <div class="page-width editorial-hero__content">
+        <p class="eyebrow">OmniDAS dataset collection</p>
+        <h1>Datasets</h1>
+        <p class="lede">Industrial, perimeter, campus, environmental, seismic and traffic recordings capture diverse sensing environments. Explore the six scenarios, their representative signals and available audio samples.</p>
+      </div>
+    </div>
+    <section class="section" aria-label="Dataset introduction">
+      <div class="page-width">
+        <div class="tabs" role="tablist" aria-label="Datasets">
+          <button type="button" role="tab" id="dataset-tab-industrial" aria-selected="true" aria-controls="dataset-panel" tabindex="0" data-dataset="industrial">Industrial</button>
+          <button type="button" role="tab" id="dataset-tab-perimeter-security" aria-selected="false" aria-controls="dataset-panel" tabindex="-1" data-dataset="perimeter-security">Perimeter Security</button>
+          <button type="button" role="tab" id="dataset-tab-campus" aria-selected="false" aria-controls="dataset-panel" tabindex="-1" data-dataset="campus">Campus</button>
+          <button type="button" role="tab" id="dataset-tab-environmental-sound" aria-selected="false" aria-controls="dataset-panel" tabindex="-1" data-dataset="environmental-sound">Environmental Sound</button>
+          <button type="button" role="tab" id="dataset-tab-seismic" aria-selected="false" aria-controls="dataset-panel" tabindex="-1" data-dataset="seismic">Seismic</button>
+          <button type="button" role="tab" id="dataset-tab-traffic" aria-selected="false" aria-controls="dataset-panel" tabindex="-1" data-dataset="traffic">Traffic</button>
+        </div>
+        <section class="dataset-panel" id="dataset-panel" role="tabpanel" tabindex="0" aria-live="polite"></section>
+      </div>
+    </section>
+    <section class="section section--tint" id="model-context" aria-label="Classification results">
+      <div class="page-width">
+        <div class="section-heading">
+          <p class="eyebrow">DAS-NanoNet</p>
+          <h2 data-results-heading>Classification results</h2>
+        </div>
+        <div class="model-context" data-classification-model-context aria-live="polite">
+          <p class="loading-state">Loading results...</p>
+        </div>
+        <a class="text-link" href="../methods/#classification-results" data-results-link>All classification results <span aria-hidden="true">&#8599;</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="page-width">
+      <p>OmniDAS Benchmark · 2026 · A public presentation of the OmniDAS benchmark.</p>
+    </div>
+  </footer>
+  <dialog class="lightbox" id="lightbox" aria-label="Image viewer">
+    <button class="lightbox__close" type="button" data-lightbox-close aria-label="Close image viewer">×</button>
+    <button class="lightbox__previous" type="button" data-lightbox-previous aria-label="Previous image">←</button>
+    <figure><img data-lightbox-image alt=""><figcaption data-lightbox-caption></figcaption></figure>
+    <button class="lightbox__next" type="button" data-lightbox-next aria-label="Next image">→</button>
+  </dialog>
+</body>
+</html>

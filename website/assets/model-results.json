@@ -1,0 +1,73 @@
+{
+  "source": "260906_naturesensors_v1_gaoyuan/submit/manuscript_submit/main.tex",
+  "benchmark": {
+    "name": "OmniDAS",
+    "scenarios": 6,
+    "records": 17372,
+    "storedScalars": 52408848768,
+    "labelsOrRegions": 30,
+    "taskTracks": [
+      "classification",
+      "fixed-region localization",
+      "task-oriented compression",
+      "waveform-reconstruction compression",
+      "self-supervised denoising"
+    ]
+  },
+  "method": {
+    "name": "DAS-NanoNet",
+    "summary": "DAS-NanoNet automatically selects a compact neural network for each sensing scenario and task. Lightweight temporal filters capture short disturbances and longer patterns, then combine information across sensing channels."
+  },
+  "classification": [
+    {"scenario": "External six-class benchmark", "parameters": 1391, "accuracy": 99.68},
+    {"scenario": "Perimeter Security", "parameters": 10667, "accuracy": 98.56},
+    {"scenario": "Campus", "parameters": 15035, "accuracy": 99.16},
+    {"scenario": "Industrial Fiber Optic Microphone", "parameters": 932, "accuracy": 97.53},
+    {"scenario": "Industrial Straight-run Fiber Optic Cable", "parameters": 933, "accuracy": 99.50},
+    {"scenario": "Environmental Sound time domain", "parameters": 1355, "accuracy": 87.00},
+    {"scenario": "Environmental Sound time-frequency", "parameters": 42076, "accuracy": 96.33}
+  ],
+  "downstream": [
+    {
+      "id": "traffic-localization",
+      "scenario": "Traffic",
+      "task": "Fixed-region localization",
+      "parameters": 29086,
+      "results": [{"label": "IoU", "value": 79.03, "unit": "%"}]
+    },
+    {
+      "id": "task-compression",
+      "scenario": "Perimeter Security",
+      "task": "Task-oriented compression",
+      "parameters": 10839,
+      "results": [
+        {"label": "Accuracy", "value": 99.52, "unit": "%"},
+        {"label": "Size reduction", "value": 11182.08, "unit": "x"}
+      ]
+    },
+    {
+      "id": "waveform-compression",
+      "scenario": "Perimeter Security",
+      "task": "Waveform-reconstruction compression",
+      "parameters": 13419,
+      "results": [
+        {"label": "Mean PSNR", "value": 28.556, "unit": " dB"},
+        {"label": "Size reduction", "value": 3.74, "unit": "x"}
+      ]
+    },
+    {
+      "id": "denoising",
+      "scenario": "Industrial Fiber Optic Microphone",
+      "task": "Self-supervised denoising",
+      "parameters": 10561,
+      "results": [
+        {"label": "Median raw-denoised correlation", "value": 0.925, "unit": ""},
+        {"label": "Background-to-anomaly attenuation difference", "value": 2.66, "unit": " dB"}
+      ]
+    }
+  ],
+  "deployment": [
+    {"scenario": "Industrial Fiber Optic Microphone", "latencyUs": 7.90},
+    {"scenario": "Perimeter Security", "latencyUs": 8.46}
+  ]
+}
